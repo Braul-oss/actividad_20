@@ -22,9 +22,10 @@ Todas se tomaron el 7 de noviembre de 2026 contra el proyecto `reporte-incidenci
 - `08-verificar-seguridad-inicio.png` y `08-verificar-seguridad.png`: inicio y final de una misma ejecución de `npm run verificar:seguridad` en una ventana de la terminal. Se ven el servicio en la nube y las 17 comprobaciones aprobadas.
 - `08-salida-nube.txt`: salida en texto de una ejecución anterior, también con 17 de 17 aprobadas.
 
+## Panel de Supabase
+
+- `03-archivo-en-supabase.png`: Storage > `incidencias-fotos`, con la carpeta del usuario, los dos archivos `.jpg` y la vista previa del cargador. Se recortaron la barra de pestañas del navegador y la barra de tareas.
+
 ## Pendientes
 
-- `03-archivo-en-supabase.png`: panel de Supabase > Storage > `incidencias-fotos`, con la carpeta del usuario y el archivo `.jpg`.
 - `04-tabla-incidencias.png`: panel de Supabase > Table Editor > `incidencias`, con las filas "Cargador dañado" y "Cargador con cable pelado".
-
-Estas dos requieren iniciar sesión en el panel web de Supabase.

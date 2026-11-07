@@ -99,7 +99,7 @@ Las capturas están en `docs/evidencias/`. Se tomaron en un teléfono Android co
 | --- | --- | --- |
 | Imagen seleccionada | `01-vista-previa.png` | Formulario con la vista previa |
 | Carga exitosa | `02-carga-exitosa.png` | Mensaje de éxito con la referencia |
-| Archivo en el servicio cloud | `03-archivo-en-supabase.png` (pendiente) | Supabase > Storage > `incidencias-fotos` con el archivo |
+| Archivo en el servicio cloud | `03-archivo-en-supabase.png` | Supabase > Storage > `incidencias-fotos` con el archivo |
 | Referencia en la base de datos | `04-tabla-incidencias.png` (pendiente) | Supabase > Table Editor > `incidencias` |
 | Imagen recuperada | `05-imagen-recuperada.png` | Lista tras cerrar y reabrir la app |
 | Formato no permitido | `06-formato-rechazado.png` | Mensaje de rechazo |
