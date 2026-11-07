@@ -93,18 +93,18 @@ Durante la prueba de conexión no recargues la app en Expo Go, porque el código
 
 ## Parte 5. Evidencias
 
-Guarda las capturas en `docs/evidencias/` con estos nombres:
+Las capturas están en `docs/evidencias/`. Se tomaron en un teléfono Android con Expo Go, contra el proyecto en la nube. Su origen se explica en [evidencias/LEEME.md](evidencias/LEEME.md).
 
-| Entregable | Archivo sugerido | Qué debe verse |
+| Entregable | Archivo | Qué se ve |
 | --- | --- | --- |
 | Imagen seleccionada | `01-vista-previa.png` | Formulario con la vista previa |
 | Carga exitosa | `02-carga-exitosa.png` | Mensaje de éxito con la referencia |
-| Archivo en el servicio cloud | `03-archivo-en-supabase.png` | Supabase > Storage > `incidencias-fotos` con el archivo |
-| Referencia en la base de datos | `04-tabla-incidencias.png` | Supabase > Table Editor > `incidencias` |
-| Imagen recuperada | `05-imagen-recuperada.png` | Lista o detalle tras cerrar y reabrir la app |
+| Archivo en el servicio cloud | `03-archivo-en-supabase.png` (pendiente) | Supabase > Storage > `incidencias-fotos` con el archivo |
+| Referencia en la base de datos | `04-tabla-incidencias.png` (pendiente) | Supabase > Table Editor > `incidencias` |
+| Imagen recuperada | `05-imagen-recuperada.png` | Lista tras cerrar y reabrir la app |
 | Formato no permitido | `06-formato-rechazado.png` | Mensaje de rechazo |
-| Sin conexión | `07-sin-conexion.png` | Banda y mensaje de error con el formulario conservado |
-| Pruebas de seguridad | `08-verificar-seguridad.png` | Salida de `npm run verificar:seguridad` |
+| Sin conexión | `07-sin-conexion.png`, `07b-reintento-exitoso.png` | Banda y mensaje de error con el formulario conservado. Al volver la conexión, el reintento sube la incidencia |
+| Pruebas de seguridad | `08-verificar-seguridad-inicio.png`, `08-verificar-seguridad.png` | Salida de `npm run verificar:seguridad` contra la nube |
 
 ## Relación con los entregables
 

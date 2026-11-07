@@ -30,6 +30,8 @@ function comprobar(nombre, correcto, detalle) {
   console.log(`${correcto ? 'OK   ' : 'FALLA'} ${nombre}\n      ${detalle}`);
 }
 
+console.log(`Servicio verificado: ${URL_SERVICIO}`);
+
 const autorA = await crearUsuario();
 const intruso = await crearUsuario();
 const sinSesion = crearCliente();

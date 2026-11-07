@@ -140,7 +140,7 @@ export async function obtenerIncidencia(id: string): Promise<IncidenciaConFoto> 
 export function mensajeDeError(error: unknown): string {
   const texto = error instanceof Error ? error.message : String(error);
   if (/network|fetch|tiempo de espera|timed? ?out|connection|internet|retryable/i.test(texto)) {
-    return 'No hay conexión con el servicio. Tus datos siguen aqui: revisa tu internet y vuelve a intentar.';
+    return 'No hay conexión con el servicio. Tus datos siguen aquí: revisa tu internet y vuelve a intentar.';
   }
   if (/mime type|invalid_mime/i.test(texto)) {
     return 'El servicio rechazó el archivo porque su formato no está permitido.';

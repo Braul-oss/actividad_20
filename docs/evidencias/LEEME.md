@@ -1,23 +1,30 @@
 # Origen de estas evidencias
 
-## Contra el proyecto en la nube
+Todas se tomaron el 7 de noviembre de 2026 contra el proyecto `reporte-incidencias` en Supabase (nube).
 
-- `08-salida-nube.txt`: salida real de `npm run verificar:seguridad` contra el proyecto `reporte-incidencias` en Supabase, el 7 de noviembre de 2026. Pasaron las 17 comprobaciones.
+## App en el teléfono
 
-## Capturas del prototipo local
+- **Dispositivo:** Xiaomi Redmi Note 12S con Android 13, con la app abierta en Expo Go 58.
+- **Método:** las capturas se tomaron desde la computadora por USB con `adb`.
+- **Fotografía:** foto real de un cargador dañado, tomada con la cámara desde la app (captura 01). Para la prueba sin conexión se usó la misma foto, recortada de la captura 05 y elegida con "Archivos", para no abrir la galería personal del teléfono.
 
-Las capturas en PNG se tomaron de forma automatizada el 7 de noviembre de 2026, antes de conectar el proyecto a la nube:
+| Archivo | Qué muestra |
+| --- | --- |
+| `01-vista-previa.png` | Formulario con la foto validada (image/jpeg, 317 KB) |
+| `02-carga-exitosa.png` | Carga exitosa, imagen recuperada de la nube, referencia en la base de datos y URL firmada |
+| `05-imagen-recuperada.png` | Lista "Mis incidencias" después de cerrar Expo Go por completo y volver a abrir la app |
+| `06-formato-rechazado.png` | Un PDF elegido con "Archivos" es rechazado: "Formato no permitido" |
+| `07-sin-conexion.png` | En modo avión: banda "Sin conexión a internet", mensaje de error y formulario conservado |
+| `07b-reintento-exitoso.png` | Al quitar el modo avión, "Reintentar envío" sube la misma incidencia sin volver a llenar el formulario |
 
-- **App:** versión web del proyecto en Microsoft Edge, con tamaño de teléfono. No es la app en un dispositivo Android.
-- **Servicio:** Supabase ejecutado localmente en Docker (`http://127.0.0.1:54321`). No es el proyecto en la nube.
-- **Imagen:** archivo de prueba generado por un script, no una fotografía real.
-- **Captura 05:** se cerró la pestaña y se abrió otra con la misma sesión guardada.
-- **Captura 08 (`08-verificar-seguridad.png`):** es una imagen generada con la salida del script contra el servicio local, no una captura de la terminal.
+## Terminal
+
+- `08-verificar-seguridad-inicio.png` y `08-verificar-seguridad.png`: inicio y final de una misma ejecución de `npm run verificar:seguridad` en una ventana de la terminal. Se ven el servicio en la nube y las 17 comprobaciones aprobadas.
+- `08-salida-nube.txt`: salida en texto de una ejecución anterior, también con 17 de 17 aprobadas.
 
 ## Pendientes
 
-La actividad pide una app móvil y un servicio en la nube, así que conviene sustituir las capturas locales antes de entregarlas:
+- `03-archivo-en-supabase.png`: panel de Supabase > Storage > `incidencias-fotos`, con la carpeta del usuario y el archivo `.jpg`.
+- `04-tabla-incidencias.png`: panel de Supabase > Table Editor > `incidencias`, con las filas "Cargador dañado" y "Cargador con cable pelado".
 
-- **Capturas 01, 02, 05, 06 y 07:** repetirlas con la app en el teléfono (Expo Go) conectada al proyecto en la nube.
-- **Capturas 03 y 04 (`03-archivo-en-supabase.png`, `04-tabla-incidencias.png`):** tomarlas del panel de Supabase. Muestran el archivo en Storage > `incidencias-fotos` y la fila en Table Editor > `incidencias`.
-- **Captura 08:** tomar una captura real de la terminal al ejecutar `npm run verificar:seguridad`.
+Estas dos requieren iniciar sesión en el panel web de Supabase.

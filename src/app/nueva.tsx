@@ -1,4 +1,4 @@
-import { useRef, useState } from 'react';
+import { ComponentRef, useRef, useState } from 'react';
 import {
   ActivityIndicator,
   Image,
@@ -43,7 +43,7 @@ export default function NuevaIncidencia() {
   const [etapa, setEtapa] = useState<EtapaCarga | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [resultado, setResultado] = useState<IncidenciaConFoto | null>(null);
-  const desplazamiento = useRef<ScrollView>(null);
+  const desplazamiento = useRef<ComponentRef<typeof ScrollView>>(null);
   const mostrarFinal = useRef(false);
 
   function alCambiarContenido() {
