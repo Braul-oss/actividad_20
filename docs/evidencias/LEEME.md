@@ -24,8 +24,6 @@ Todas se tomaron el 7 de noviembre de 2026 contra el proyecto `reporte-incidenci
 
 ## Panel de Supabase
 
-- `03-archivo-en-supabase.png`: Storage > `incidencias-fotos`, con la carpeta del usuario, los dos archivos `.jpg` y la vista previa del cargador. Se recortaron la barra de pestañas del navegador y la barra de tareas.
+- `03-archivo-en-supabase.png`: Storage > `incidencias-fotos`, con la carpeta del usuario, los dos archivos `.jpg` y la vista previa del cargador. - `04-tabla-incidencias.png`: Table Editor > `incidencias`, con las filas "Cargador dañado" y "Cargador con cable pelado" registradas desde el teléfono. Las tres filas "Prueba de seguridad" las crea el script de verificación con usuarios anónimos de prueba.
 
-## Pendientes
-
-- `04-tabla-incidencias.png`: panel de Supabase > Table Editor > `incidencias`, con las filas "Cargador dañado" y "Cargador con cable pelado".
+En ambas se recortaron la barra de pestañas del navegador y la barra de tareas.
