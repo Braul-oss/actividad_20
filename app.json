@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "actividad_20",
-    "slug": "actividad_20",
+    "name": "Reporte de Incidencias",
+    "slug": "reporte-incidencias",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -19,7 +19,22 @@
       "predictiveBackGestureEnabled": false
     },
     "web": {
-      "favicon": "./assets/favicon.png"
-    }
+      "favicon": "./assets/favicon.png",
+      "output": "single"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-status-bar",
+      "expo-sqlite",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "La app necesita acceder a tus fotos para adjuntarlas a la incidencia.",
+          "cameraPermission": "La app necesita la cámara para fotografiar la incidencia.",
+          "microphonePermission": false
+        }
+      ]
+    ],
+    "scheme": "reporteincidencias"
   }
 }
