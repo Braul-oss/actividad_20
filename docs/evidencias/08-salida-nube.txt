@@ -1,0 +1,48 @@
+Servicio verificado: https://rrnxjavdxthkbvxwducv.supabase.co
+
+Carga autorizada
+OK    El propietario puede subir un JPG a su carpeta
+      167af578-40da-4a45-aa5a-253be718ec96/543a1916-5175-4bcf-bed1-af153ee21824.jpg
+OK    El propietario puede descargar su archivo
+      descarga correcta
+
+Restricciones de carga
+OK    Rechaza un PDF
+      mime type application/pdf is not supported
+OK    Rechaza un archivo mayor a 5 MB
+      The object exceeded the maximum allowed size
+OK    Impide subir a la carpeta de otro usuario
+      new row violates row-level security policy
+OK    Impide subir sin sesión
+      new row violates row-level security policy
+
+Acceso a archivos privados
+OK    La URL pública no entrega el archivo
+      HTTP 400
+OK    Sin sesión no se puede descargar
+      Object not found
+OK    Otro usuario no puede descargar
+      Object not found
+OK    Otro usuario no puede generar una URL firmada
+      Object not found
+OK    Otro usuario no puede borrar el archivo
+      0 archivos borrados por el intruso
+
+URL firmada
+OK    Funciona mientras está vigente
+      HTTP 200
+OK    Deja de funcionar al vencer
+      HTTP 400
+
+Base de datos
+OK    El propietario puede registrar su incidencia
+      0ed8db0f-db8a-46c9-b199-02bb37a1669f
+OK    Otro usuario no ve la incidencia
+      0 filas visibles
+OK    Sin sesión no se ve la incidencia
+      0 filas visibles
+OK    Impide registrar una foto de otro usuario
+      new row violates row-level security policy for table "incidencias"
+
+Todas las comprobaciones pasaron.
+
